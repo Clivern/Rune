@@ -51,7 +51,7 @@ defmodule Rune.MixProject do
   defp deps do
     [
       {:dialyxir, "~> 1.2", only: [:dev], runtime: false},
-      {:ex_doc, "~> 0.32", only: [:dev], runtime: false}
+      {:ex_doc, "~> 0.34", only: [:dev], runtime: false}
     ]
   end
 end
