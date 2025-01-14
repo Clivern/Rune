@@ -1,45 +1,40 @@
-# Rune
+<p align="center">
+    <img src="assets/logo.svg" width="180" alt="Rune logo">
+    <h3 align="center">Rune</h3>
+    <p align="center">A hands-on introduction to Elixir, one annotated example at a time.</p>
+</p>
 
-Learning Elixir.
 
+## What's inside
 
-## Installation
+Small Elixir programs, one topic each, in the spirit of [Elixir's getting started guide](https://elixir-lang.org/getting-started/introduction.html).
+They go from values and pattern matching through processes, OTP, and the standard library.
 
-the package can be installed by adding `rune` to your list of dependencies in `mix.exs`:
+Each folder holds a commented `main.exs` you can run on its own (Elixir 1.19+):
 
-```elixir
-def deps do
-  [
-    {:rune, "~> 0.1"}
-  ]
-end
+```zsh
+$ elixir 01_hello_world/main.exs
 ```
 
+Examples from GenStage onward use libraries. Fetch them once, then use the `Run:` line at the top of the script (`elixir` or `mix run`):
 
-## Versioning
+```zsh
+$ mix deps.get
+$ mix run 65_genstage/main.exs
+```
 
-For transparency into our release cycle and in striving to maintain backward compatibility, Rune is maintained under the [Semantic Versioning guidelines](https://semver.org/) and release process is predictable and business-friendly.
+## Website
 
-See the [Releases section of our GitHub project](https://github.com/clivern/rune/releases) for changelogs for each release version of Rune. It contains summaries of the most noteworthy changes made in each release.
+To build and preview the examples with their output:
 
+```zsh
+$ python3 site/build.py
+$ python3 -m http.server -d docs
+```
 
-## Bug tracker
+## References
 
-If you have any suggestions, bug reports, or annoyances please report them to our issue tracker at https://github.com/clivern/rune/issues
-
-
-## Security Issues
-
-If you discover a security vulnerability within Rune, please send an email to [hello@clivern.com](mailto:hello@clivern.com)
-
-
-## Contributing
-
-We are an open source, community-driven project so please feel free to join us. see the [contributing guidelines](CONTRIBUTING.md) for more details.
-
-
-## License
-
-© 2022, Clivern. Released under [MIT License](https://opensource.org/licenses/mit-license.php).
-
-**Rune** is authored and maintained by [@clivern](http://github.com/clivern).
+- [Getting started](https://elixir-lang.org/getting-started/introduction.html)
+- [Elixir School](https://elixirschool.com/)
+- [Documentation](https://hexdocs.pm/elixir/)
+- [Mix and OTP](https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
