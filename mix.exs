@@ -23,7 +23,7 @@ defmodule Rune.MixProject do
       {:broadway, "~> 1.2"},
       {:telemetry, "~> 1.3"},
       {:ecto, "~> 3.13"},
-      {:phoenix, "~> 1.7.21"},
+      {:phoenix, "~> 1.8.0"},
       {:phoenix_live_view, "~> 1.0"},
       {:lazy_html, "~> 0.1"}
     ]
