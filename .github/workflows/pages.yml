@@ -28,7 +28,7 @@ jobs:
     - name: Install Elixir
       uses: erlef/setup-beam@v1
       with:
-        elixir-version: "1.19.3"
+        elixir-version: "v1.20.5"
         otp-version: "28.1"
 
     - name: Fetch dependencies
